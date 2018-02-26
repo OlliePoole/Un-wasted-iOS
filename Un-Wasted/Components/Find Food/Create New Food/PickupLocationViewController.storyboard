@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g33-zl-Y7n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pickup Location View Controller-->
+        <scene sceneID="cTq-Xb-1L8">
+            <objects>
+                <viewController id="g33-zl-Y7n" customClass="PickupLocationViewController" customModule="Un_Wasted" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFS-Kx-yeo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffy-Od-4DX">
+                                <rect key="frame" x="20" y="50" width="335" height="62"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WHERE WILL ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="YOU MEET?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.33334366269999999" green="0.8674818822" blue="0.1872047151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="26" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3d-5E-cmF">
+                                <rect key="frame" x="20" y="127" width="335" height="450"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK5-lC-JE0" customClass="WastedButton" customModule="Un_Wasted" customModuleProvider="target">
+                                <rect key="frame" x="20" y="597" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5g8-Br-Djt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="DONE"/>
+                                <connections>
+                                    <action selector="doneButtonPressedWithSender:" destination="g33-zl-Y7n" eventType="touchUpInside" id="SGx-x1-CUB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WW0-BM-t3g" firstAttribute="bottom" secondItem="IK5-lC-JE0" secondAttribute="bottom" constant="30" id="N8Y-0o-z9d"/>
+                            <constraint firstItem="IK5-lC-JE0" firstAttribute="top" secondItem="d3d-5E-cmF" secondAttribute="bottom" constant="20" id="Pvd-aI-tmy"/>
+                            <constraint firstItem="d3d-5E-cmF" firstAttribute="leading" secondItem="WW0-BM-t3g" secondAttribute="leading" constant="20" id="UfP-6s-HTx"/>
+                            <constraint firstItem="IK5-lC-JE0" firstAttribute="leading" secondItem="WW0-BM-t3g" secondAttribute="leading" constant="20" id="byf-Ka-9ES"/>
+                            <constraint firstItem="d3d-5E-cmF" firstAttribute="top" secondItem="ffy-Od-4DX" secondAttribute="bottom" constant="15" id="fGC-eQ-9NC"/>
+                            <constraint firstItem="WW0-BM-t3g" firstAttribute="trailing" secondItem="d3d-5E-cmF" secondAttribute="trailing" constant="20" id="fKi-L9-rlX"/>
+                            <constraint firstItem="WW0-BM-t3g" firstAttribute="trailing" secondItem="IK5-lC-JE0" secondAttribute="trailing" constant="20" id="npQ-gV-8n1"/>
+                            <constraint firstItem="ffy-Od-4DX" firstAttribute="top" secondItem="WW0-BM-t3g" secondAttribute="top" constant="30" id="nr1-m9-icb"/>
+                            <constraint firstItem="ffy-Od-4DX" firstAttribute="leading" secondItem="WW0-BM-t3g" secondAttribute="leading" constant="20" id="o0V-4i-tXG"/>
+                            <constraint firstItem="WW0-BM-t3g" firstAttribute="trailing" secondItem="ffy-Od-4DX" secondAttribute="trailing" constant="20" id="oyL-8j-Qqv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WW0-BM-t3g"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="d3d-5E-cmF" id="elu-F9-d6Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKX-hP-BGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="181"/>
+        </scene>
+    </scenes>
+</document>

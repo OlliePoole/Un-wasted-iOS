@@ -7,15 +7,35 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 struct User {
-    let id: Int
     let name: String
     let imageURL: URL
+    
+    var apnsToken: String?
+    var publicKey: String!
+    
+    init?(json: JSON) {
+        guard let name = json["name"].string, let image = json["image"].url else {
+            return nil
+        }
+        
+        self.name = name
+        self.imageURL = image
+        self.apnsToken = json["apns_token"].string
+    }
+    
+    init(name: String, imageURL: URL, apnsToken: String, publicKey: String) {
+        self.name = name
+        self.imageURL = imageURL
+        self.apnsToken = apnsToken
+        self.publicKey = publicKey
+    }
 }
 
 extension User: Equatable {
     static func ==(lhs: User, rhs: User) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.name == rhs.name
     }
 }

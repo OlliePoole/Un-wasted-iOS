@@ -25,7 +25,7 @@ class FindFoodTableViewCell: UITableViewCell {
         userNameLabel.text = foodItem.provider.name
         userImageView.sd_setImage(with: foodItem.provider.imageURL)
         
-        foodNameLabel.text = foodItem.name
+        foodNameLabel.text = foodItem.name.uppercased()
         foodDistanceLabel.text = foodItem.distanceFormatted
     }
     

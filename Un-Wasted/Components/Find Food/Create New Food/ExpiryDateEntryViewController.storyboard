@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rpn-ve-zKM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Expiry Date Entry View Controller-->
+        <scene sceneID="TTM-c4-DEY">
+            <objects>
+                <viewController id="rpn-ve-zKM" customClass="ExpiryDateEntryViewController" customModule="Un_Wasted" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IR3-Ne-den">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaX-e3-xAD">
+                                <rect key="frame" x="16" y="50" width="343" height="62"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WHEN DOES IT  ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="EXPIRE?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.33334366269999999" green="0.8674818822" blue="0.1872047151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="26" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4od-Qd-vap">
+                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="541193131.55482304">
+                                    <!--2018-02-24 19:25:31 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KS-uT-2gG" customClass="WastedButton" customModule="Un_Wasted" customModuleProvider="target">
+                                <rect key="frame" x="30" y="587" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.33334366269999999" green="0.8674818822" blue="0.1872047151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OAM-cU-itK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressedWithSender:" destination="rpn-ve-zKM" eventType="touchUpInside" id="imk-f2-oDk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5KS-uT-2gG" firstAttribute="leading" secondItem="35R-OF-cad" secondAttribute="leading" constant="30" id="JvM-Px-FLP"/>
+                            <constraint firstItem="LaX-e3-xAD" firstAttribute="leading" secondItem="35R-OF-cad" secondAttribute="leading" constant="16" id="Kzh-fb-XzY"/>
+                            <constraint firstItem="35R-OF-cad" firstAttribute="trailing" secondItem="LaX-e3-xAD" secondAttribute="trailing" constant="16" id="Npu-Nz-yOT"/>
+                            <constraint firstItem="4od-Qd-vap" firstAttribute="leading" secondItem="35R-OF-cad" secondAttribute="leading" id="Plu-qU-Eos"/>
+                            <constraint firstItem="4od-Qd-vap" firstAttribute="trailing" secondItem="35R-OF-cad" secondAttribute="trailing" id="STs-YQ-isi"/>
+                            <constraint firstItem="35R-OF-cad" firstAttribute="bottom" secondItem="5KS-uT-2gG" secondAttribute="bottom" constant="30" id="V3j-41-Z5L"/>
+                            <constraint firstItem="35R-OF-cad" firstAttribute="trailing" secondItem="5KS-uT-2gG" secondAttribute="trailing" constant="30" id="VlL-ft-odW"/>
+                            <constraint firstItem="LaX-e3-xAD" firstAttribute="top" secondItem="35R-OF-cad" secondAttribute="top" constant="30" id="bfS-H8-ce3"/>
+                            <constraint firstItem="4od-Qd-vap" firstAttribute="centerY" secondItem="IR3-Ne-den" secondAttribute="centerY" id="lse-Xw-9Jy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="35R-OF-cad"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="4od-Qd-vap" id="3Ow-5b-Htj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMR-iP-pyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="124"/>
+        </scene>
+    </scenes>
+</document>

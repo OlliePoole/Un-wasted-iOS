@@ -40,5 +40,7 @@ func ==(lhs: NetworkError, rhs: NetworkError) -> Bool {
 
 extension NetworkError {
     
-    static let GeneralError = NetworkError(code: 1003, title: "Something went wrong there", message: "Please try again")
+    @nonobjc static let GeneralError = NetworkError(code: 1003, title: "Something went wrong there", message: "Please try again")
+    
+    @nonobjc static let UserCancelled = NetworkError(code: 1004, title: "User Cancelled", message: "")
 }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Fw-95-CTj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="aiW-V6-Gph">
+            <objects>
+                <viewController id="2Fw-95-CTj" customClass="QRScannerViewController" customModule="Un_Wasted" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="78Y-Ry-mCX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHi-G2-5ne">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-gJ-JsO">
+                                <rect key="frame" x="303" y="20" width="56" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.41790533689999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonPressedWithSender:" destination="2Fw-95-CTj" eventType="touchUpInside" id="AU9-5B-nYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sHi-G2-5ne" firstAttribute="leading" secondItem="fTr-5b-CJn" secondAttribute="leading" id="G1P-7Q-1AF"/>
+                            <constraint firstItem="sHi-G2-5ne" firstAttribute="trailing" secondItem="fTr-5b-CJn" secondAttribute="trailing" id="Mit-pr-YL0"/>
+                            <constraint firstItem="fTr-5b-CJn" firstAttribute="trailing" secondItem="0IZ-gJ-JsO" secondAttribute="trailing" constant="16" id="aPZ-Vp-O4a"/>
+                            <constraint firstItem="sHi-G2-5ne" firstAttribute="top" secondItem="78Y-Ry-mCX" secondAttribute="top" id="amf-u7-Utg"/>
+                            <constraint firstItem="0IZ-gJ-JsO" firstAttribute="top" secondItem="fTr-5b-CJn" secondAttribute="top" id="os3-Ka-3yE"/>
+                            <constraint firstItem="sHi-G2-5ne" firstAttribute="bottom" secondItem="fTr-5b-CJn" secondAttribute="bottom" id="uEz-1L-EmK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fTr-5b-CJn"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="sHi-G2-5ne" id="dQe-lo-iS0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1g-xi-hId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.199999999999999" y="150.67466266866569"/>
+        </scene>
+    </scenes>
+</document>

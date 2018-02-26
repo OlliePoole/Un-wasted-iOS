@@ -22,8 +22,6 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -39,5 +37,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Un-Wasted uses your location to find food nearby</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Un-Wasted wants to use you camera so you can take a photo of the food to upload</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string></string>
 </dict>
 </plist>

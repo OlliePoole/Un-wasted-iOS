@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5153EE181C3839B2106F6D1C /* Pods_NoMoreWaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC253E869D29BCC12E1DB455 /* Pods_NoMoreWaste.framework */; };
+		559AB7D01DA3BC2405B188A3 /* Pods_Un_Wasted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79A5CDA9E68B6BE72D5F8E2 /* Pods_Un_Wasted.framework */; };
 		6B766B47204127C20046A00F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B766B46204127C20046A00F /* AppDelegate.swift */; };
 		6B766B4E204127C20046A00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B766B4D204127C20046A00F /* Assets.xcassets */; };
 		6B766B51204127C20046A00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B766B4F204127C20046A00F /* LaunchScreen.storyboard */; };
-		6B766B59204127E30046A00F /* HomeTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B766B58204127E30046A00F /* HomeTabBarController.storyboard */; };
 		6B766B5C2041280F0046A00F /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B766B5B2041280F0046A00F /* ProfileViewController.storyboard */; };
 		6B766B612041285B0046A00F /* FindFoodViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B766B602041285B0046A00F /* FindFoodViewController.storyboard */; };
 		6B766B63204128A50046A00F /* PublicFeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B766B62204128A50046A00F /* PublicFeedViewController.storyboard */; };
@@ -25,16 +24,41 @@
 		6B766B772041521F0046A00F /* FindFoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B766B762041521F0046A00F /* FindFoodViewModel.swift */; };
 		6B766B7A2041528D0046A00F /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B766B792041528D0046A00F /* FoodItem.swift */; };
 		6B766B7D204160F30046A00F /* FindFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B766B7C204160F30046A00F /* FindFoodTableViewCell.swift */; };
+		6BBAE5FB20421DDC00029EE6 /* FindFoodDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE5FA20421DDC00029EE6 /* FindFoodDetailViewModel.swift */; };
+		6BBAE5FE20424F8800029EE6 /* LocalBiteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE5FD20424F8800029EE6 /* LocalBiteStorage.swift */; };
+		6BBAE601204253DC00029EE6 /* ScheduledCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE600204253DC00029EE6 /* ScheduledCollectionViewController.swift */; };
+		6BBAE603204253E800029EE6 /* ScheduledCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBAE602204253E800029EE6 /* ScheduledCollectionViewController.storyboard */; };
+		6BBAE60520426F8000029EE6 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE60420426F8000029EE6 /* QRScannerViewController.swift */; };
+		6BBAE6072042715D00029EE6 /* QRScannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBAE6062042715D00029EE6 /* QRScannerViewController.storyboard */; };
+		6BD0B81E2041722D002322DD /* FindFoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B81D2041722D002322DD /* FindFoodDetailViewController.swift */; };
+		6BD0B8202041723C002322DD /* FindFoodDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD0B81F2041723C002322DD /* FindFoodDetailViewController.storyboard */; };
+		6BD0B8232041880E002322DD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B8222041880E002322DD /* UIColor+Extensions.swift */; };
+		6BD0B82620418D23002322DD /* FindFoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B82520418D23002322DD /* FindFoodService.swift */; };
+		6BD0B82A204194B3002322DD /* UIViewController+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B829204194B3002322DD /* UIViewController+Initialization.swift */; };
+		6BD0B82C2041AD59002322DD /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B82B2041AD59002322DD /* HomeTabBarController.swift */; };
+		6BD0B82E2041B73A002322DD /* AddFoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B82D2041B73A002322DD /* AddFoodItemViewController.swift */; };
+		6BD0B8302041B746002322DD /* AddFoodItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD0B82F2041B746002322DD /* AddFoodItemViewController.storyboard */; };
+		6BD0B8322041EAFB002322DD /* AddFoodItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B8312041EAFB002322DD /* AddFoodItemViewModel.swift */; };
+		6BD0B8352041ECD1002322DD /* FileUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B8332041ECD1002322DD /* FileUploadService.swift */; };
+		6BD0B8362041ECD1002322DD /* ImageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B8342041ECD1002322DD /* ImageUpload.swift */; };
+		6BD0B8382041F341002322DD /* ExpiryDateEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B8372041F341002322DD /* ExpiryDateEntryViewController.swift */; };
+		6BD0B83A2041F350002322DD /* ExpiryDateEntryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD0B8392041F350002322DD /* ExpiryDateEntryViewController.storyboard */; };
+		6BD0B83C2041FAA7002322DD /* PickupLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B83B2041FAA7002322DD /* PickupLocationViewController.swift */; };
+		6BD0B83E2041FAAF002322DD /* PickupLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD0B83D2041FAAF002322DD /* PickupLocationViewController.storyboard */; };
+		6BD0B8402041FB5D002322DD /* WastedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B83F2041FB5D002322DD /* WastedButton.swift */; };
+		6BD0B84220420850002322DD /* AddFoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B84120420850002322DD /* AddFoodService.swift */; };
+		6BD0B84420420C2B002322DD /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B84320420C2B002322DD /* UserManager.swift */; };
+		6BD0B84620420F95002322DD /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B84520420F95002322DD /* GlobalFunctions.swift */; };
+		6BD0B84820421272002322DD /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0B84720421272002322DD /* UIView+Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19287926BD4E1702FF47D914 /* Pods-NoMoreWaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMoreWaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoMoreWaste/Pods-NoMoreWaste.release.xcconfig"; sourceTree = "<group>"; };
+		61DE2A4590BFABA51410ED2E /* Pods-Un-Wasted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Un-Wasted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Un-Wasted/Pods-Un-Wasted.release.xcconfig"; sourceTree = "<group>"; };
 		6B766B43204127C20046A00F /* Un-Wasted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Un-Wasted.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B766B46204127C20046A00F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B766B4D204127C20046A00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B766B50204127C20046A00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B766B52204127C20046A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B766B58204127E30046A00F /* HomeTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBarController.storyboard; sourceTree = "<group>"; };
 		6B766B5B2041280F0046A00F /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		6B766B602041285B0046A00F /* FindFoodViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindFoodViewController.storyboard; sourceTree = "<group>"; };
 		6B766B62204128A50046A00F /* PublicFeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PublicFeedViewController.storyboard; sourceTree = "<group>"; };
@@ -48,8 +72,35 @@
 		6B766B762041521F0046A00F /* FindFoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFoodViewModel.swift; sourceTree = "<group>"; };
 		6B766B792041528D0046A00F /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		6B766B7C204160F30046A00F /* FindFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFoodTableViewCell.swift; sourceTree = "<group>"; };
-		7A58EE98B3805E704939EEFA /* Pods-NoMoreWaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMoreWaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoMoreWaste/Pods-NoMoreWaste.debug.xcconfig"; sourceTree = "<group>"; };
-		CC253E869D29BCC12E1DB455 /* Pods_NoMoreWaste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoMoreWaste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBAE5FA20421DDC00029EE6 /* FindFoodDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFoodDetailViewModel.swift; sourceTree = "<group>"; };
+		6BBAE5FC204234EA00029EE6 /* Un-Wasted.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Un-Wasted.entitlements"; sourceTree = "<group>"; };
+		6BBAE5FD20424F8800029EE6 /* LocalBiteStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBiteStorage.swift; sourceTree = "<group>"; };
+		6BBAE600204253DC00029EE6 /* ScheduledCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledCollectionViewController.swift; sourceTree = "<group>"; };
+		6BBAE602204253E800029EE6 /* ScheduledCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduledCollectionViewController.storyboard; sourceTree = "<group>"; };
+		6BBAE60420426F8000029EE6 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		6BBAE6062042715D00029EE6 /* QRScannerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRScannerViewController.storyboard; sourceTree = "<group>"; };
+		6BD0B81D2041722D002322DD /* FindFoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFoodDetailViewController.swift; sourceTree = "<group>"; };
+		6BD0B81F2041723C002322DD /* FindFoodDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindFoodDetailViewController.storyboard; sourceTree = "<group>"; };
+		6BD0B8222041880E002322DD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		6BD0B82520418D23002322DD /* FindFoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFoodService.swift; sourceTree = "<group>"; };
+		6BD0B829204194B3002322DD /* UIViewController+Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Initialization.swift"; sourceTree = "<group>"; };
+		6BD0B82B2041AD59002322DD /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		6BD0B82D2041B73A002322DD /* AddFoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodItemViewController.swift; sourceTree = "<group>"; };
+		6BD0B82F2041B746002322DD /* AddFoodItemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddFoodItemViewController.storyboard; sourceTree = "<group>"; };
+		6BD0B8312041EAFB002322DD /* AddFoodItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodItemViewModel.swift; sourceTree = "<group>"; };
+		6BD0B8332041ECD1002322DD /* FileUploadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUploadService.swift; sourceTree = "<group>"; };
+		6BD0B8342041ECD1002322DD /* ImageUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUpload.swift; sourceTree = "<group>"; };
+		6BD0B8372041F341002322DD /* ExpiryDateEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryDateEntryViewController.swift; sourceTree = "<group>"; };
+		6BD0B8392041F350002322DD /* ExpiryDateEntryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpiryDateEntryViewController.storyboard; sourceTree = "<group>"; };
+		6BD0B83B2041FAA7002322DD /* PickupLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationViewController.swift; sourceTree = "<group>"; };
+		6BD0B83D2041FAAF002322DD /* PickupLocationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickupLocationViewController.storyboard; sourceTree = "<group>"; };
+		6BD0B83F2041FB5D002322DD /* WastedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WastedButton.swift; sourceTree = "<group>"; };
+		6BD0B84120420850002322DD /* AddFoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodService.swift; sourceTree = "<group>"; };
+		6BD0B84320420C2B002322DD /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		6BD0B84520420F95002322DD /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		6BD0B84720421272002322DD /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		A8A095DF00C880CCB3AC1597 /* Pods-Un-Wasted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Un-Wasted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Un-Wasted/Pods-Un-Wasted.debug.xcconfig"; sourceTree = "<group>"; };
+		F79A5CDA9E68B6BE72D5F8E2 /* Pods_Un_Wasted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Un_Wasted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5153EE181C3839B2106F6D1C /* Pods_NoMoreWaste.framework in Frameworks */,
+				559AB7D01DA3BC2405B188A3 /* Pods_Un_Wasted.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +118,7 @@
 		0F2BD1C21F12FB10577B375A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC253E869D29BCC12E1DB455 /* Pods_NoMoreWaste.framework */,
+				F79A5CDA9E68B6BE72D5F8E2 /* Pods_Un_Wasted.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,7 +144,9 @@
 		6B766B45204127C20046A00F /* Un-Wasted */ = {
 			isa = PBXGroup;
 			children = (
+				6BBAE5FC204234EA00029EE6 /* Un-Wasted.entitlements */,
 				6B766B5A204127FF0046A00F /* Components */,
+				6BD0B821204187FF002322DD /* Utils */,
 				6B766B69204129B90046A00F /* Services */,
 				6B766B46204127C20046A00F /* AppDelegate.swift */,
 				6B766B4D204127C20046A00F /* Assets.xcassets */,
@@ -106,7 +159,8 @@
 		6B766B5A204127FF0046A00F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				6B766B58204127E30046A00F /* HomeTabBarController.storyboard */,
+				6BBAE5FF204253C500029EE6 /* Collection */,
+				6BD0B82B2041AD59002322DD /* HomeTabBarController.swift */,
 				6B766B5D204128300046A00F /* Profile */,
 				6B766B5E204128350046A00F /* Find Food */,
 				6B766B5F2041283B0046A00F /* PublicFeed */,
@@ -128,11 +182,15 @@
 		6B766B5E204128350046A00F /* Find Food */ = {
 			isa = PBXGroup;
 			children = (
+				6BD0B82420418D18002322DD /* Service */,
 				6B766B7B204160E20046A00F /* Views */,
 				6B766B78204152830046A00F /* Models */,
 				6B766B75204151FE0046A00F /* ViewModel */,
 				6B766B602041285B0046A00F /* FindFoodViewController.storyboard */,
 				6B766B71204151C80046A00F /* FindFoodViewController.swift */,
+				6BD0B81F2041723C002322DD /* FindFoodDetailViewController.storyboard */,
+				6BD0B81D2041722D002322DD /* FindFoodDetailViewController.swift */,
+				6BBAE5F920421DB800029EE6 /* Create New Food */,
 			);
 			path = "Find Food";
 			sourceTree = "<group>";
@@ -140,6 +198,8 @@
 		6B766B5F2041283B0046A00F /* PublicFeed */ = {
 			isa = PBXGroup;
 			children = (
+				6BBAE60B2042769600029EE6 /* Model */,
+				6BBAE6082042761800029EE6 /* View Model */,
 				6B766B62204128A50046A00F /* PublicFeedViewController.storyboard */,
 				6B766B73204151EB0046A00F /* PublicFeedViewController.swift */,
 			);
@@ -157,8 +217,12 @@
 		6B766B69204129B90046A00F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6BD0B8332041ECD1002322DD /* FileUploadService.swift */,
+				6BD0B8342041ECD1002322DD /* ImageUpload.swift */,
 				6B766B6B204129CA0046A00F /* LoadingStateMachine.swift */,
 				6B766B6A204129CA0046A00F /* NetworkError.swift */,
+				6BD0B84120420850002322DD /* AddFoodService.swift */,
+				6BBAE5FD20424F8800029EE6 /* LocalBiteStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				6B766B762041521F0046A00F /* FindFoodViewModel.swift */,
+				6BD0B8312041EAFB002322DD /* AddFoodItemViewModel.swift */,
+				6BBAE5FA20421DDC00029EE6 /* FindFoodDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,11 +261,70 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6BBAE5F920421DB800029EE6 /* Create New Food */ = {
+			isa = PBXGroup;
+			children = (
+				6BD0B82F2041B746002322DD /* AddFoodItemViewController.storyboard */,
+				6BD0B82D2041B73A002322DD /* AddFoodItemViewController.swift */,
+				6BD0B8392041F350002322DD /* ExpiryDateEntryViewController.storyboard */,
+				6BD0B8372041F341002322DD /* ExpiryDateEntryViewController.swift */,
+				6BD0B83D2041FAAF002322DD /* PickupLocationViewController.storyboard */,
+				6BD0B83B2041FAA7002322DD /* PickupLocationViewController.swift */,
+			);
+			path = "Create New Food";
+			sourceTree = "<group>";
+		};
+		6BBAE5FF204253C500029EE6 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				6BBAE600204253DC00029EE6 /* ScheduledCollectionViewController.swift */,
+				6BBAE602204253E800029EE6 /* ScheduledCollectionViewController.storyboard */,
+				6BBAE60420426F8000029EE6 /* QRScannerViewController.swift */,
+				6BBAE6062042715D00029EE6 /* QRScannerViewController.storyboard */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		6BBAE6082042761800029EE6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		6BBAE60B2042769600029EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BD0B821204187FF002322DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BD0B8222041880E002322DD /* UIColor+Extensions.swift */,
+				6BD0B829204194B3002322DD /* UIViewController+Initialization.swift */,
+				6BD0B83F2041FB5D002322DD /* WastedButton.swift */,
+				6BD0B84320420C2B002322DD /* UserManager.swift */,
+				6BD0B84520420F95002322DD /* GlobalFunctions.swift */,
+				6BD0B84720421272002322DD /* UIView+Animations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6BD0B82420418D18002322DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6BD0B82520418D23002322DD /* FindFoodService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		93C5A83186A7938F1BE9329F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A58EE98B3805E704939EEFA /* Pods-NoMoreWaste.debug.xcconfig */,
-				19287926BD4E1702FF47D914 /* Pods-NoMoreWaste.release.xcconfig */,
+				A8A095DF00C880CCB3AC1597 /* Pods-Un-Wasted.debug.xcconfig */,
+				61DE2A4590BFABA51410ED2E /* Pods-Un-Wasted.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -240,6 +365,11 @@
 					6B766B42204127C20046A00F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -267,11 +397,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B766B51204127C20046A00F /* LaunchScreen.storyboard in Resources */,
+				6BD0B8302041B746002322DD /* AddFoodItemViewController.storyboard in Resources */,
 				6B766B612041285B0046A00F /* FindFoodViewController.storyboard in Resources */,
 				6B766B63204128A50046A00F /* PublicFeedViewController.storyboard in Resources */,
 				6B766B4E204127C20046A00F /* Assets.xcassets in Resources */,
+				6BBAE6072042715D00029EE6 /* QRScannerViewController.storyboard in Resources */,
 				6B766B5C2041280F0046A00F /* ProfileViewController.storyboard in Resources */,
-				6B766B59204127E30046A00F /* HomeTabBarController.storyboard in Resources */,
+				6BD0B8202041723C002322DD /* FindFoodDetailViewController.storyboard in Resources */,
+				6BBAE603204253E800029EE6 /* ScheduledCollectionViewController.storyboard in Resources */,
+				6BD0B83A2041F350002322DD /* ExpiryDateEntryViewController.storyboard in Resources */,
+				6BD0B83E2041FAAF002322DD /* PickupLocationViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,16 +419,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NoMoreWaste/Pods-NoMoreWaste-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Un-Wasted/Pods-Un-Wasted-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoMoreWaste/Pods-NoMoreWaste-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Un-Wasted/Pods-Un-Wasted-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94CB5C9CD87D36385FDF80C6 /* [CP] Check Pods Manifest.lock */ = {
@@ -307,7 +448,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoMoreWaste-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Un-Wasted-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -326,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoMoreWaste/Pods-NoMoreWaste-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Un-Wasted/Pods-Un-Wasted-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -337,15 +478,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B766B682041293B0046A00F /* ProfileViewModel.swift in Sources */,
+				6BD0B83C2041FAA7002322DD /* PickupLocationViewController.swift in Sources */,
+				6BD0B82A204194B3002322DD /* UIViewController+Initialization.swift in Sources */,
 				6B766B6C204129CA0046A00F /* NetworkError.swift in Sources */,
+				6BD0B8322041EAFB002322DD /* AddFoodItemViewModel.swift in Sources */,
 				6B766B72204151C80046A00F /* FindFoodViewController.swift in Sources */,
+				6BD0B8232041880E002322DD /* UIColor+Extensions.swift in Sources */,
+				6BD0B8352041ECD1002322DD /* FileUploadService.swift in Sources */,
+				6BD0B82E2041B73A002322DD /* AddFoodItemViewController.swift in Sources */,
+				6BBAE60520426F8000029EE6 /* QRScannerViewController.swift in Sources */,
 				6B766B74204151EB0046A00F /* PublicFeedViewController.swift in Sources */,
 				6B766B7A2041528D0046A00F /* FoodItem.swift in Sources */,
+				6BD0B84820421272002322DD /* UIView+Animations.swift in Sources */,
+				6BBAE5FB20421DDC00029EE6 /* FindFoodDetailViewModel.swift in Sources */,
 				6B766B7020412A780046A00F /* User.swift in Sources */,
+				6BD0B84620420F95002322DD /* GlobalFunctions.swift in Sources */,
 				6B766B65204129220046A00F /* ProfileViewController.swift in Sources */,
+				6BD0B8362041ECD1002322DD /* ImageUpload.swift in Sources */,
+				6BD0B8402041FB5D002322DD /* WastedButton.swift in Sources */,
+				6BBAE601204253DC00029EE6 /* ScheduledCollectionViewController.swift in Sources */,
 				6B766B7D204160F30046A00F /* FindFoodTableViewCell.swift in Sources */,
+				6BD0B81E2041722D002322DD /* FindFoodDetailViewController.swift in Sources */,
+				6BD0B84220420850002322DD /* AddFoodService.swift in Sources */,
+				6BBAE5FE20424F8800029EE6 /* LocalBiteStorage.swift in Sources */,
+				6BD0B84420420C2B002322DD /* UserManager.swift in Sources */,
+				6BD0B8382041F341002322DD /* ExpiryDateEntryViewController.swift in Sources */,
+				6BD0B82620418D23002322DD /* FindFoodService.swift in Sources */,
 				6B766B47204127C20046A00F /* AppDelegate.swift in Sources */,
 				6B766B772041521F0046A00F /* FindFoodViewModel.swift in Sources */,
+				6BD0B82C2041AD59002322DD /* HomeTabBarController.swift in Sources */,
 				6B766B6D204129CA0046A00F /* LoadingStateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,12 +634,16 @@
 		};
 		6B766B56204127C20046A00F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A58EE98B3805E704939EEFA /* Pods-NoMoreWaste.debug.xcconfig */;
+			baseConfigurationReference = A8A095DF00C880CCB3AC1597 /* Pods-Un-Wasted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Un-Wasted/Un-Wasted.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YT2Y5MZ29S;
 				INFOPLIST_FILE = "$(SRCROOT)/Un-Wasted/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.startHack2018.Un-Wasted";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,12 +654,16 @@
 		};
 		6B766B57204127C20046A00F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19287926BD4E1702FF47D914 /* Pods-NoMoreWaste.release.xcconfig */;
+			baseConfigurationReference = 61DE2A4590BFABA51410ED2E /* Pods-Un-Wasted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Un-Wasted/Un-Wasted.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YT2Y5MZ29S;
 				INFOPLIST_FILE = "$(SRCROOT)/Un-Wasted/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.startHack2018.Un-Wasted";
 				PRODUCT_NAME = "$(TARGET_NAME)";

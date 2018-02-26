@@ -18,6 +18,7 @@ protocol FindFoodViewModelOutputs: class {
 
 class FindFoodViewModel {
     
+    private let findFoodService: FindFoodServiceType
     private var foodLoadingStateMachine: LoadingStateMachine<FoodItem> = .initial {
         didSet {
             self.outputs?.foodLoadingStateMachine = foodLoadingStateMachine
@@ -29,8 +30,9 @@ class FindFoodViewModel {
         return self
     }
     
-    init(outputs: FindFoodViewModelOutputs) {
+    init(outputs: FindFoodViewModelOutputs, findFoodService: FindFoodServiceType = FindFoodService()) {
         self.outputs = outputs
+        self.findFoodService = findFoodService
     }
 }
 
@@ -42,7 +44,14 @@ extension FindFoodViewModel: FindFoodViewModelInputs {
         }
         
         foodLoadingStateMachine = .initial
-        // TODO: make an API request here
+        findFoodService.loadFoodNearby(location: 0, long: 0, success: { items in
+            DispatchQueue.main.async {
+                self.foodLoadingStateMachine = .loaded(items: items)
+            }
+        }) {
+            // TODO: handle error here
+        }
+        
     }
     
 }
